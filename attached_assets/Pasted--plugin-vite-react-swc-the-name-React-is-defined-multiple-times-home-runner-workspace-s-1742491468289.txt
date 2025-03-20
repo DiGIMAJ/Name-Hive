@@ -1,0 +1,155 @@
+[plugin:vite:react-swc] × the name `React` is defined multiple times
+    ╭─[/home/runner/workspace/src/components/admin/AccessDenied.tsx:2:1]
+  1 │ 
+  2 │ import React from 'react';
+    ·        ──┬──
+    ·          ╰── previous definition of `React` here
+  3 │ import { useNavigate } from 'react-router-dom';
+  4 │ import { AlertCircle } from 'lucide-react';
+  5 │ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+  6 │ import { Button } from '@/components/ui/button';
+  7 │ 
+  8 │ const AccessDenied = () => {
+  9 │   const navigate = useNavigate();
+ 10 │   
+ 11 │   return (
+ 12 │     <div>
+ 13 │       <Alert variant="destructive" className="mb-6">
+ 14 │         <AlertCircle className="size-4" />
+ 15 │         <AlertTitle>Access Denied</AlertTitle>
+ 16 │         <AlertDescription>
+ 17 │           You don't have permission to access the admin dashboard.
+ 18 │         </AlertDescription>
+ 19 │       </Alert>
+ 20 │       <Button onClick={() => navigate('/dashboard')}>
+ 21 │         Return to Dashboard
+ 22 │       </Button>
+ 23 │     </div>
+ 24 │   );
+ 25 │ };
+ 26 │ 
+ 27 │ export default AccessDenied;
+ 28 │ import React from 'react';
+    ·        ──┬──
+    ·          ╰── `React` redefined here
+ 29 │ import { Link } from 'react-router-dom';
+ 30 │ import { Button } from '@/components/ui/button';
+ 31 │ import { AlertTriangle } from 'lucide-react';
+    ╰────
+  × the name `Button` is defined multiple times
+    ╭─[/home/runner/workspace/src/components/admin/AccessDenied.tsx:6:1]
+  3 │ import { useNavigate } from 'react-router-dom';
+  4 │ import { AlertCircle } from 'lucide-react';
+  5 │ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+  6 │ import { Button } from '@/components/ui/button';
+    ·          ───┬──
+    ·             ╰── previous definition of `Button` here
+  7 │ 
+  8 │ const AccessDenied = () => {
+  9 │   const navigate = useNavigate();
+ 10 │   
+ 11 │   return (
+ 12 │     <div>
+ 13 │       <Alert variant="destructive" className="mb-6">
+ 14 │         <AlertCircle className="size-4" />
+ 15 │         <AlertTitle>Access Denied</AlertTitle>
+ 16 │         <AlertDescription>
+ 17 │           You don't have permission to access the admin dashboard.
+ 18 │         </AlertDescription>
+ 19 │       </Alert>
+ 20 │       <Button onClick={() => navigate('/dashboard')}>
+ 21 │         Return to Dashboard
+ 22 │       </Button>
+ 23 │     </div>
+ 24 │   );
+ 25 │ };
+ 26 │ 
+ 27 │ export default AccessDenied;
+ 28 │ import React from 'react';
+ 29 │ import { Link } from 'react-router-dom';
+ 30 │ import { Button } from '@/components/ui/button';
+    ·          ───┬──
+    ·             ╰── `Button` redefined here
+ 31 │ import { AlertTriangle } from 'lucide-react';
+ 32 │ 
+ 33 │ const AccessDenied = () => {
+    ╰────
+  × the name `AccessDenied` is defined multiple times
+    ╭─[/home/runner/workspace/src/components/admin/AccessDenied.tsx:8:1]
+  5 │ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+  6 │ import { Button } from '@/components/ui/button';
+  7 │ 
+  8 │ const AccessDenied = () => {
+    ·       ──────┬─────
+    ·             ╰── previous definition of `AccessDenied` here
+  9 │   const navigate = useNavigate();
+ 10 │   
+ 11 │   return (
+ 12 │     <div>
+ 13 │       <Alert variant="destructive" className="mb-6">
+ 14 │         <AlertCircle className="size-4" />
+ 15 │         <AlertTitle>Access Denied</AlertTitle>
+ 16 │         <AlertDescription>
+ 17 │           You don't have permission to access the admin dashboard.
+ 18 │         </AlertDescription>
+ 19 │       </Alert>
+ 20 │       <Button onClick={() => navigate('/dashboard')}>
+ 21 │         Return to Dashboard
+ 22 │       </Button>
+ 23 │     </div>
+ 24 │   );
+ 25 │ };
+ 26 │ 
+ 27 │ export default AccessDenied;
+ 28 │ import React from 'react';
+ 29 │ import { Link } from 'react-router-dom';
+ 30 │ import { Button } from '@/components/ui/button';
+ 31 │ import { AlertTriangle } from 'lucide-react';
+ 32 │ 
+ 33 │ const AccessDenied = () => {
+    ·       ──────┬─────
+    ·             ╰── `AccessDenied` redefined here
+ 34 │   return (
+ 35 │     <div className="flex flex-col items-center justify-center h-64">
+ 36 │       <AlertTriangle className="size-12 text-red-500 mb-4" />
+    ╰────
+  × the name `default` is exported multiple times
+    ╭─[/home/runner/workspace/src/components/admin/AccessDenied.tsx:27:1]
+ 24 │   );
+ 25 │ };
+ 26 │ 
+ 27 │ export default AccessDenied;
+    · ──────────────┬─────────────
+    ·               ╰── previous exported here
+ 28 │ import React from 'react';
+ 29 │ import { Link } from 'react-router-dom';
+ 30 │ import { Button } from '@/components/ui/button';
+ 31 │ import { AlertTriangle } from 'lucide-react';
+ 32 │ 
+ 33 │ const AccessDenied = () => {
+ 34 │   return (
+ 35 │     <div className="flex flex-col items-center justify-center h-64">
+ 36 │       <AlertTriangle className="size-12 text-red-500 mb-4" />
+ 37 │       <h2 className="text-2xl font-bold mb-2">Access Denied</h2>
+ 38 │       <p className="text-gray-600 mb-4">You don't have permission to access this page</p>
+ 39 │       <Button asChild>
+ 40 │         <Link to="/">Return Home</Link>
+ 41 │       </Button>
+ 42 │     </div>
+ 43 │   );
+ 44 │ };
+ 45 │ 
+ 46 │ export default AccessDenied;
+    · ──────────────┬─────────────
+    ·               ╰── exported more than once
+    ╰────
+
+Advice:   ☞ Exported identifiers must be unique
+/home/runner/workspace/src/components/admin/AccessDenied.tsx:2:1
+1  |  
+2  |  import React from 'react';
+   |            ^
+3  |  import { useNavigate } from 'react-router-dom';
+4  |  import { AlertCircle } from 'lucide-react';
+Click outside, press Esc key, or fix the code to dismiss.
+You can also disable this overlay by setting server.hmr.overlay to false in vite.config.ts.
