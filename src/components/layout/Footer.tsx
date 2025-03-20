@@ -56,3 +56,58 @@ const Footer = () => {
 };
 
 export default Footer;
+import { Link } from 'react-router-dom';
+
+const Footer = () => {
+  const generatorCategories = [
+    { title: 'Business & Brand', path: '/business-brand' },
+    { title: 'Personal & Social', path: '/personal-social' },
+    { title: 'Writing & Creative', path: '/writing-creative' },
+    { title: 'Tech Industry', path: '/tech-industry' },
+    { title: 'Geographical & Local', path: '/geographical-local' },
+    { title: 'Fantasy & Gaming', path: '/fantasy-gaming' },
+    { title: 'Niche-Specific', path: '/niche-specific' },
+    { title: 'Specialty & Fun', path: '/specialty-fun' },
+  ];
+
+  return (
+    <footer className="bg-gray-100 py-12">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 className="font-semibold mb-4">Generator Categories</h3>
+            <ul className="space-y-2">
+              {generatorCategories.map((category) => (
+                <li key={category.path}>
+                  <Link to={category.path} className="text-gray-600 hover:text-gray-900">
+                    {category.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-4">Company</h3>
+            <ul className="space-y-2">
+              <li><Link to="/about" className="text-gray-600 hover:text-gray-900">About Us</Link></li>
+              <li><Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-4">Legal</h3>
+            <ul className="space-y-2">
+              <li><Link to="/privacy" className="text-gray-600 hover:text-gray-900">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="text-gray-600 hover:text-gray-900">Terms of Service</Link></li>
+              <li><Link to="/refund-policy" className="text-gray-600 hover:text-gray-900">Refund Policy</Link></li>
+            </ul>
+          </div>
+        </div>
+        <div className="mt-8 pt-8 border-t border-gray-200">
+          <p className="text-center text-gray-600">© {new Date().getFullYear()} Name Generator. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

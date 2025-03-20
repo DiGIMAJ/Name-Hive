@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from '@/components/ui/toaster';
 import { AuthProvider } from '@/context/AuthContext';
@@ -34,6 +33,15 @@ import GeographicalLocalPage from '@/pages/GeographicalLocalPage';
 import FantasyGamingPage from '@/pages/FantasyGamingPage';
 import SpecialtyFunPage from '@/pages/SpecialtyFunPage';
 
+// New Pages
+import AboutPage from '@/pages/AboutPage';
+import ContactPage from '@/pages/ContactPage';
+import PrivacyPage from '@/pages/PrivacyPage';
+import TermsPage from '@/pages/TermsPage';
+import RefundPage from '@/pages/RefundPage';
+import Footer from '@/components/Footer';
+
+
 import '@/App.css';
 
 function App() {
@@ -57,11 +65,11 @@ function App() {
           <Route path="/checkout/:plan" element={<CheckoutPage />} />
           <Route path="/subscription" element={<SubscriptionPage />} />
           <Route path="/subscription/success" element={<SubscriptionSuccessPage />} />
-          
+
           {/* Generator pages */}
           <Route path="/generator/random" element={<RandomNameGenerator />} />
           <Route path="/generator/podcast" element={<PodcastNameGenerator />} />
-          
+
           {/* Category pages */}
           <Route path="/business-brand" element={<BusinessBrandPage />} />
           <Route path="/personal-social" element={<PersonalSocialPage />} />
@@ -71,9 +79,15 @@ function App() {
           <Route path="/geographical-local" element={<GeographicalLocalPage />} />
           <Route path="/fantasy-gaming" element={<FantasyGamingPage />} />
           <Route path="/specialty-fun" element={<SpecialtyFunPage />} />
-          
+
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/refund-policy" element={<RefundPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
         <Toaster />
       </Router>
     </AuthProvider>
