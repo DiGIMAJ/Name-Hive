@@ -39,7 +39,7 @@ import ContactPage from '@/pages/ContactPage';
 import PrivacyPage from '@/pages/PrivacyPage';
 import TermsPage from '@/pages/TermsPage';
 import RefundPage from '@/pages/RefundPage';
-import Footer from '@/components/Footer';
+import Footer from '@/components/layout/Footer';
 
 
 import '@/App.css';
