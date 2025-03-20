@@ -16,7 +16,7 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
-import { supabase } from '@/lib/supabase';
+import { supabase } from '@/integrations/supabase/client';
 
 const formSchema = z.object({
   username: z.string().min(1, 'Username is required'),
