@@ -1,5 +1,6 @@
-
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useAuth } from '@/context/AuthContext';
 
@@ -23,7 +24,8 @@ const categoryLinks = [
 
 const MobileNavMenu = ({ isOpen, onClose, onSignOut }: MobileNavMenuProps) => {
   const { user } = useAuth();
-  
+  const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
+
   return (
     <div 
       className={cn(
@@ -39,10 +41,22 @@ const MobileNavMenu = ({ isOpen, onClose, onSignOut }: MobileNavMenuProps) => {
         >
           All Generators
         </Link>
-        
-        <div className="space-y-2">
-          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider px-2">Categories</p>
-          <div className="pl-2 border-l border-gray-100 space-y-2">
+
+        <div>
+          <button
+            onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
+            className="w-full flex items-center justify-between text-sm font-semibold text-gray-500 uppercase tracking-wider px-2"
+          >
+            Categories
+            <ChevronDown className={cn(
+              "size-4 transition-transform duration-200",
+              isCategoriesOpen ? "rotate-180" : ""
+            )} />
+          </button>
+          <div className={cn(
+            "pl-2 border-l border-gray-100 space-y-2 overflow-hidden transition-all duration-200",
+            isCategoriesOpen ? "max-h-96 mt-2 opacity-100" : "max-h-0 opacity-0"
+          )}>
             {categoryLinks.slice(1).map((link) => (
               <Link 
                 key={link.to}
@@ -55,7 +69,7 @@ const MobileNavMenu = ({ isOpen, onClose, onSignOut }: MobileNavMenuProps) => {
             ))}
           </div>
         </div>
-        
+
         <Link 
           to="/blog" 
           className="text-base font-medium py-2 text-gray-700 hover:text-purple-600"
@@ -63,7 +77,7 @@ const MobileNavMenu = ({ isOpen, onClose, onSignOut }: MobileNavMenuProps) => {
         >
           Blog
         </Link>
-        
+
         <a 
           href="#how-it-works" 
           className="text-base font-medium py-2 text-gray-700 hover:text-purple-600"
@@ -71,7 +85,7 @@ const MobileNavMenu = ({ isOpen, onClose, onSignOut }: MobileNavMenuProps) => {
         >
           How It Works
         </a>
-        
+
         <a 
           href="#faq" 
           className="text-base font-medium py-2 text-gray-700 hover:text-purple-600"
@@ -79,7 +93,7 @@ const MobileNavMenu = ({ isOpen, onClose, onSignOut }: MobileNavMenuProps) => {
         >
           FAQ
         </a>
-        
+
         <div className="border-t border-gray-100 pt-4 mt-2">
           {!user ? (
             <>
