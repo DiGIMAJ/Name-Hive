@@ -49,15 +49,12 @@ const AdminSignIn = () => {
     setIsLoading(true);
     
     try {
-      // Check if username is the admin username
-      if (values.username !== 'NameHiveAdmin') {
+      // Hard-coded admin credentials check
+      if (values.username !== 'admin@namehive.fun' || values.password !== 'Admin123!2') {
         throw new Error('Invalid administrator credentials');
       }
       
-      // Hard-coded admin credentials check
-      if (values.username === 'NameHiveAdmin' && values.password === '12345678') {
-        // Use the email associated with the admin account in Supabase
-        const adminEmail = 'admin@namehive.com';
+      const adminEmail = 'admin@namehive.fun';
         
         const { error } = await signIn(adminEmail, values.password);
         
