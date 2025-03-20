@@ -112,7 +112,7 @@ const PodcastNameGenerator = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-purple-50">
       <Navbar />
-      <main>
+      <main className="scroll-smooth">
         {/* Hero Section */}
         <section className="pt-32 pb-16 bg-gradient-to-b from-purple-100 to-purple-50 relative">
           <div className="page-container relative z-10">
@@ -352,6 +352,118 @@ const PodcastNameGenerator = () => {
                   </Button>
                 </div>
               )}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-white/50">
+          <div className="page-container">
+            <h2 className="text-3xl font-bold text-purple-800 text-center mb-12">Frequently Asked Questions</h2>
+            <div className="max-w-4xl mx-auto grid gap-8">
+              <Card className="bg-white/70">
+                <CardHeader>
+                  <CardTitle>What is a podcast name generator?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>Our AI-powered podcast name generator creates unique and engaging names based on your podcast's topic, style, and target audience. It combines creativity with relevance to help you find the perfect name.</p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/70">
+                <CardHeader>
+                  <CardTitle>How does the podcast name generator work?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>Simply enter your podcast's description, niche, and desired number of names. Our AI analyzes your input and generates creative, relevant name suggestions along with helpful insights about each name.</p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/70">
+                <CardHeader>
+                  <CardTitle>Why is choosing the right podcast name important?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>Your podcast name is your first impression. It helps attract the right audience, improves searchability, and establishes your brand. A great name can significantly impact your podcast's success.</p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/70">
+                <CardHeader>
+                  <CardTitle>What makes a good podcast name?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Short and memorable</li>
+                    <li>Easy to spell and pronounce</li>
+                    <li>Relevant to your content</li>
+                    <li>Unique and distinguishable</li>
+                    <li>Search-friendly</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Guide Section */}
+        <section className="py-16 bg-gradient-to-b from-purple-50 to-white">
+          <div className="page-container">
+            <div className="max-w-4xl mx-auto space-y-12">
+              <div className="text-center">
+                <h2 className="text-3xl font-bold text-purple-800 mb-4">How to Use the Podcast Name Generator</h2>
+                <p className="text-lg text-purple-600">Follow these simple steps to find your perfect podcast name</p>
+              </div>
+
+              <div className="grid gap-8 md:grid-cols-2">
+                <Card className="bg-white/70">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <span className="size-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center">1</span>
+                      Describe Your Podcast
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Enter a detailed description of your podcast, including its topic, tone, and target audience. The more specific you are, the better the results.</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white/70">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <span className="size-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center">2</span>
+                      Specify Your Niche
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Choose your podcast's main category or niche. This helps generate names that resonate with your specific audience.</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white/70">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <span className="size-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center">3</span>
+                      Generate Names
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Click the generate button and let our AI create unique podcast name suggestions tailored to your input.</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white/70">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <span className="size-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center">4</span>
+                      Review and Choose
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Browse through the generated names, each complete with insights about why it would work and tips for growing your podcast.</p>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </section>
