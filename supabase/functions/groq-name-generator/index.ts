@@ -29,12 +29,17 @@ serve(async (req) => {
     console.log("Request received with parameters:", { nameType, keywords, niche, numberOfNames });
     
     // Construct the user prompt based on input
-    const userPrompt = `Generate ${numberOfNames || 5} unique, brandable, creative and catchy name ideas for a ${niche || 'general'} ${nameType || 'name'}. 
-The names should be engaging and easy to remember.
-The ${nameType || 'name'} focuses on ${keywords || 'general topics'}.
-Remember to format your response as JSON exactly as specified in the system instructions.`;
+    const userPrompt = `Generate ${numberOfNames || 5} unique, brandable, and creative podcast name ideas for a ${niche || 'general'} podcast. The names should be:
 
-    const systemPrompt = `You are an AI that generates creative and unique names based on user input.
+Catchy, engaging, and easy to remember
+Relevant to the theme or topics covered in the podcast
+Suitable for branding and potential audience growth
+Focus on the following keywords/concepts: ${keywords || 'general topics'}.
+
+Response Format:
+Return the podcast names in a JSON array exactly as specified in the system instructions.`;
+
+    const systemPrompt = `You are an AI specializing in generating creative, unique, and brandable podcast names based on user input. You will receive a user prompt that describes the desired podcast name generation task. Your task is to generate a list of podcast names based on the user prompt.
 You MUST respond with a valid JSON structure containing an array of name objects.
 
 Your output MUST strictly follow this format without any additional text or explanation:
