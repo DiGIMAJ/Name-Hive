@@ -1,0 +1,215 @@
+[plugin:vite:react-swc] × the name `Link` is defined multiple times
+    ╭─[/home/runner/workspace/src/components/layout/Footer.tsx:2:1]
+  1 │ 
+  2 │ import { Link } from 'react-router-dom';
+    ·          ──┬─
+    ·            ╰── previous definition of `Link` here
+  3 │ import Logo from '@/components/common/Logo';
+  4 │ 
+  5 │ const Footer = () => {
+  6 │   const currentYear = new Date().getFullYear();
+  7 │   
+  8 │   return (
+  9 │     <footer className="bg-gray-900 text-white py-8">
+ 10 │       <div className="page-container">
+ 11 │         <div className="grid gap-6 md:grid-cols-4">
+ 12 │           <div>
+ 13 │             <Logo variant="light" />
+ 14 │             <p className="text-gray-400 text-sm mt-2">
+ 15 │               AI-powered name generator for all your needs
+ 16 │             </p>
+ 17 │           </div>
+ 18 │           
+ 19 │           <div>
+ 20 │             <h3 className="font-medium text-base mb-2">Generators</h3>
+ 21 │             <ul className="space-y-1 text-sm">
+ 22 │               <li><Link to="/business-brand" className="text-gray-400 hover:text-white transition">Business & Brand</Link></li>
+ 23 │               <li><Link to="/personal-social" className="text-gray-400 hover:text-white transition">Personal & Social</Link></li>
+ 24 │               <li><Link to="/writing-creative" className="text-gray-400 hover:text-white transition">Writing & Creative</Link></li>
+ 25 │               <li><Link to="/niche-specific" className="text-gray-400 hover:text-white transition">Niche-Specific</Link></li>
+ 26 │             </ul>
+ 27 │           </div>
+ 28 │           
+ 29 │           <div>
+ 30 │             <h3 className="font-medium text-base mb-2">Special Generators</h3>
+ 31 │             <ul className="space-y-1 text-sm">
+ 32 │               <li><Link to="/tech-industry" className="text-gray-400 hover:text-white transition">Tech Industry</Link></li>
+ 33 │               <li><Link to="/geographical-local" className="text-gray-400 hover:text-white transition">Geographical</Link></li>
+ 34 │               <li><Link to="/fantasy-gaming" className="text-gray-400 hover:text-white transition">Fantasy & Gaming</Link></li>
+ 35 │               <li><Link to="/specialty-fun" className="text-gray-400 hover:text-white transition">Specialty & Fun</Link></li>
+ 36 │             </ul>
+ 37 │           </div>
+ 38 │           
+ 39 │           <div>
+ 40 │             <h3 className="font-medium text-base mb-2">Links</h3>
+ 41 │             <ul className="space-y-1 text-sm">
+ 42 │               <li><Link to="/blog" className="text-gray-400 hover:text-white transition">Blog</Link></li>
+ 43 │               <li><Link to="/pricing" className="text-gray-400 hover:text-white transition">Pricing</Link></li>
+ 44 │               <li><Link to="/sitemap" className="text-gray-400 hover:text-white transition">Sitemap</Link></li>
+ 45 │               <li><a href="mailto:info@namehive.fun" className="text-gray-400 hover:text-white transition">Contact</a></li>
+ 46 │             </ul>
+ 47 │           </div>
+ 48 │         </div>
+ 49 │         
+ 50 │         <div className="border-t border-gray-800 mt-6 pt-4 text-center text-xs text-gray-500">
+ 51 │           <p>&copy; {currentYear} Name Hive. All rights reserved.</p>
+ 52 │         </div>
+ 53 │       </div>
+ 54 │     </footer>
+ 55 │   );
+ 56 │ };
+ 57 │ 
+ 58 │ export default Footer;
+ 59 │ import { Link } from 'react-router-dom';
+    ·          ──┬─
+    ·            ╰── `Link` redefined here
+ 60 │ 
+ 61 │ const Footer = () => {
+ 62 │   const generatorCategories = [
+    ╰────
+  × the name `Footer` is defined multiple times
+    ╭─[/home/runner/workspace/src/components/layout/Footer.tsx:5:1]
+  2 │ import { Link } from 'react-router-dom';
+  3 │ import Logo from '@/components/common/Logo';
+  4 │ 
+  5 │ const Footer = () => {
+    ·       ───┬──
+    ·          ╰── previous definition of `Footer` here
+  6 │   const currentYear = new Date().getFullYear();
+  7 │   
+  8 │   return (
+  9 │     <footer className="bg-gray-900 text-white py-8">
+ 10 │       <div className="page-container">
+ 11 │         <div className="grid gap-6 md:grid-cols-4">
+ 12 │           <div>
+ 13 │             <Logo variant="light" />
+ 14 │             <p className="text-gray-400 text-sm mt-2">
+ 15 │               AI-powered name generator for all your needs
+ 16 │             </p>
+ 17 │           </div>
+ 18 │           
+ 19 │           <div>
+ 20 │             <h3 className="font-medium text-base mb-2">Generators</h3>
+ 21 │             <ul className="space-y-1 text-sm">
+ 22 │               <li><Link to="/business-brand" className="text-gray-400 hover:text-white transition">Business & Brand</Link></li>
+ 23 │               <li><Link to="/personal-social" className="text-gray-400 hover:text-white transition">Personal & Social</Link></li>
+ 24 │               <li><Link to="/writing-creative" className="text-gray-400 hover:text-white transition">Writing & Creative</Link></li>
+ 25 │               <li><Link to="/niche-specific" className="text-gray-400 hover:text-white transition">Niche-Specific</Link></li>
+ 26 │             </ul>
+ 27 │           </div>
+ 28 │           
+ 29 │           <div>
+ 30 │             <h3 className="font-medium text-base mb-2">Special Generators</h3>
+ 31 │             <ul className="space-y-1 text-sm">
+ 32 │               <li><Link to="/tech-industry" className="text-gray-400 hover:text-white transition">Tech Industry</Link></li>
+ 33 │               <li><Link to="/geographical-local" className="text-gray-400 hover:text-white transition">Geographical</Link></li>
+ 34 │               <li><Link to="/fantasy-gaming" className="text-gray-400 hover:text-white transition">Fantasy & Gaming</Link></li>
+ 35 │               <li><Link to="/specialty-fun" className="text-gray-400 hover:text-white transition">Specialty & Fun</Link></li>
+ 36 │             </ul>
+ 37 │           </div>
+ 38 │           
+ 39 │           <div>
+ 40 │             <h3 className="font-medium text-base mb-2">Links</h3>
+ 41 │             <ul className="space-y-1 text-sm">
+ 42 │               <li><Link to="/blog" className="text-gray-400 hover:text-white transition">Blog</Link></li>
+ 43 │               <li><Link to="/pricing" className="text-gray-400 hover:text-white transition">Pricing</Link></li>
+ 44 │               <li><Link to="/sitemap" className="text-gray-400 hover:text-white transition">Sitemap</Link></li>
+ 45 │               <li><a href="mailto:info@namehive.fun" className="text-gray-400 hover:text-white transition">Contact</a></li>
+ 46 │             </ul>
+ 47 │           </div>
+ 48 │         </div>
+ 49 │         
+ 50 │         <div className="border-t border-gray-800 mt-6 pt-4 text-center text-xs text-gray-500">
+ 51 │           <p>&copy; {currentYear} Name Hive. All rights reserved.</p>
+ 52 │         </div>
+ 53 │       </div>
+ 54 │     </footer>
+ 55 │   );
+ 56 │ };
+ 57 │ 
+ 58 │ export default Footer;
+ 59 │ import { Link } from 'react-router-dom';
+ 60 │ 
+ 61 │ const Footer = () => {
+    ·       ───┬──
+    ·          ╰── `Footer` redefined here
+ 62 │   const generatorCategories = [
+ 63 │     { title: 'Business & Brand', path: '/business-brand' },
+ 64 │     { title: 'Personal & Social', path: '/personal-social' },
+    ╰────
+  × the name `default` is exported multiple times
+     ╭─[/home/runner/workspace/src/components/layout/Footer.tsx:58:1]
+  55 │   );
+  56 │ };
+  57 │ 
+  58 │ export default Footer;
+     · ───────────┬──────────
+     ·            ╰── previous exported here
+  59 │ import { Link } from 'react-router-dom';
+  60 │ 
+  61 │ const Footer = () => {
+  62 │   const generatorCategories = [
+  63 │     { title: 'Business & Brand', path: '/business-brand' },
+  64 │     { title: 'Personal & Social', path: '/personal-social' },
+  65 │     { title: 'Writing & Creative', path: '/writing-creative' },
+  66 │     { title: 'Tech Industry', path: '/tech-industry' },
+  67 │     { title: 'Geographical & Local', path: '/geographical-local' },
+  68 │     { title: 'Fantasy & Gaming', path: '/fantasy-gaming' },
+  69 │     { title: 'Niche-Specific', path: '/niche-specific' },
+  70 │     { title: 'Specialty & Fun', path: '/specialty-fun' },
+  71 │   ];
+  72 │ 
+  73 │   return (
+  74 │     <footer className="bg-gray-100 py-12">
+  75 │       <div className="container mx-auto px-4">
+  76 │         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+  77 │           <div>
+  78 │             <h3 className="font-semibold mb-4">Generator Categories</h3>
+  79 │             <ul className="space-y-2">
+  80 │               {generatorCategories.map((category) => (
+  81 │                 <li key={category.path}>
+  82 │                   <Link to={category.path} className="text-gray-600 hover:text-gray-900">
+  83 │                     {category.title}
+  84 │                   </Link>
+  85 │                 </li>
+  86 │               ))}
+  87 │             </ul>
+  88 │           </div>
+  89 │           <div>
+  90 │             <h3 className="font-semibold mb-4">Company</h3>
+  91 │             <ul className="space-y-2">
+  92 │               <li><Link to="/about" className="text-gray-600 hover:text-gray-900">About Us</Link></li>
+  93 │               <li><Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link></li>
+  94 │             </ul>
+  95 │           </div>
+  96 │           <div>
+  97 │             <h3 className="font-semibold mb-4">Legal</h3>
+  98 │             <ul className="space-y-2">
+  99 │               <li><Link to="/privacy" className="text-gray-600 hover:text-gray-900">Privacy Policy</Link></li>
+ 100 │               <li><Link to="/terms" className="text-gray-600 hover:text-gray-900">Terms of Service</Link></li>
+ 101 │               <li><Link to="/refund-policy" className="text-gray-600 hover:text-gray-900">Refund Policy</Link></li>
+ 102 │             </ul>
+ 103 │           </div>
+ 104 │         </div>
+ 105 │         <div className="mt-8 pt-8 border-t border-gray-200">
+ 106 │           <p className="text-center text-gray-600">© {new Date().getFullYear()} Name Generator. All rights reserved.</p>
+ 107 │         </div>
+ 108 │       </div>
+ 109 │     </footer>
+ 110 │   );
+ 111 │ };
+ 112 │ 
+ 113 │ export default Footer;
+     · ───────────┬──────────
+     ·            ╰── exported more than once
+     ╰────
+
+Advice:   ☞ Exported identifiers must be unique
+/home/runner/workspace/src/components/layout/Footer.tsx:2:1
+1  |  
+2  |  import { Link } from 'react-router-dom';
+   |            ^
+3  |  import Logo from '@/components/common/Logo';
+4  |
+Click outside, press Esc key, or fix the code to dismiss.
+You can also disable this overlay by setting server.hmr.overlay to false in vite.config.ts.
