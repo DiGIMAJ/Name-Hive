@@ -1,0 +1,45 @@
+"Footer is not defined
+at App (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/src/App.tsx:960:39)
+at renderWithHooks (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:11548:26)
+at mountIndeterminateComponent (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:14926:21)
+at beginWork (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:15914:22)
+at HTMLUnknownElement.callCallback2 (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:3674:22)
+at Object.invokeGuardedCallbackDev (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:3699:24)
+at invokeGuardedCallback (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:3733:39)
+at beginWork$1 (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:19765:15)
+at performUnitOfWork (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:19198:20)
+at workLoopSync (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:19137:13)", "Footer is not defined
+at App (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/src/App.tsx:960:39)
+at renderWithHooks (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:11548:26)
+at mountIndeterminateComponent (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:14926:21)
+at beginWork (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:15914:22)
+at HTMLUnknownElement.callCallback2 (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:3674:22)
+at Object.invokeGuardedCallbackDev (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:3699:24)
+at invokeGuardedCallback (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:3733:39)
+at beginWork$1 (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:19765:15)
+at performUnitOfWork (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:19198:20)
+at workLoopSync (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:19137:13)", "The above error occurred in the <App> component:
+
+    at App (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/src/App.tsx:960:39)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+at App (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/src/App.tsx:960:39)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+at t.value (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/__replco/static/devtools/eruda/3.2.3/eruda.js:2:17465)
+at new t (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/__replco/static/devtools/eruda/3.2.3/eruda.js:2:12630)
+at t.value (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/__replco/static/devtools/eruda/3.2.3/eruda.js:2:32766)
+at https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/__replco/static/devtools/eruda/3.2.3/eruda.js:2:34400", "Footer is not defined
+at App (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/src/App.tsx:960:39)
+at renderWithHooks (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:11548:26)
+at mountIndeterminateComponent (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:14926:21)
+at beginWork (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:15914:22)
+at beginWork$1 (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:19753:22)
+at performUnitOfWork (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:19198:20)
+at workLoopSync (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:19137:13)
+at renderRootSync (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:19116:15)
+at recoverFromConcurrentError (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:18736:28)
+at performConcurrentWorkOnRoot (https://b1be950d-daec-428d-926a-c9a6983952e7-00-1qremx8lrba54.kirk.replit.dev:8080/node_modules/.vite/deps/chunk-3IHV7RO6.js?v=a5e729b1:18684:30)"
