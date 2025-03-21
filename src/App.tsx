@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from '@/components/ui/toaster';
 import { AuthProvider } from '@/context/AuthContext';
 import ScrollToTop from '@/components/common/ScrollToTop';
+import Footer from '@/components/layout/Footer';
 import Index from '@/pages/Index';
 import SignUp from '@/pages/auth/SignUp';
 import SignIn from '@/pages/auth/SignIn';
